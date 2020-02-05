@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Test for Kelnik</title>
+    <link rel="stylesheet" href="styles/main.min.css">
+  </head>
+  <body> 
+    <header class="header">
+      <div class="header__logo"><a href="#"><img src="img/logo.png" alt="logo" width="34" height="85"></a></div>
+      <div class="header__nav">
+        <input type="checkbox" id="header__toggle">
+        <label for="header__toggle"><span></span></label>
+        <div class="header__nav-wrap">
+          <ul class="header__nav-list">
+                <li><a class="nav__link" href="#">Объекты</a></li>
+                <li><a class="nav__link" href="#">Компания</a></li>
+                <li><a class="nav__link" href="#">Как купить</a></li>
+                <li><a class="nav__link" href="#">Агентам</a></li>
+                <li><a class="nav__link" href="#">Регионам</a></li>
+                <li><a class="nav__link" href="#">Акции</a></li>
+                <li><a class="nav__link" href="#">Контакты</a></li>
+          </ul>
+          <div class="header__contacts"><a href="tel:8888888898">8 888 88 88 98</a><span>Звони скорее!</span></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="catalog">
+          <h1>Найдено 666 квартир</h1>
+          <div class="catalog__container">
+            <div class="catalog__sort"><span>Сортировать по:</span>
+              <div id="sortPrice"><a class="catalog__sort-btn catalog__sort-btn--asc"> <span>Цене</span></a><a class="catalog__sort-btn catalog__sort-btn--desc"> <span>Цене</span></a></div>
+              <div id="sortAmount"><a class="catalog__sort-btn catalog__sort-btn--amount-desc"><span>Комнатам</span></a><a class="catalog__sort-btn catalog__sort-btn--amount-asc"><span>Комнатам</span></a></div>
+            </div>
+            <ul class="catalog__list">
+                  <li class="catalog__item" data-price="1900000" data-amount="6">
+                    <div class="card card--booked">
+                      <div class="card__image"><img src="img/catalog-1.jpg" alt=""></div>
+                      <h3 class="card__title">Студия №44</h3>
+                      <ul>
+                        <li class="card__type"> 
+                          <pre>без
+отделки</pre>
+                        </li>
+                        <li class="card__area"><span>28</span>&nbsp;м&#178;<br><span>площадь</span></li>
+                        <li class="card__floor"><span>12/14</span><br><span>этаж</span></li>
+                      </ul><span class="card__price">1 900 000<span>&nbsp;руб.</span></span>
+                      <div class="card__choose">
+                        <input type="checkbox" id="card1">
+                        <label for="card1"></label>
+                      </div><span class="card__footer">Забронировано</span>
+                    </div>
+                  </li>
+                  <li class="catalog__item" data-price="1666666" data-amount="13">
+                    <div class="card card--free">
+                      <div class="card__image"><img src="img/catalog-2.jpg" alt=""></div>
+                      <h3 class="card__title">Однокомнатная №666</h3>
+                      <ul>
+                        <li class="card__type"> 
+                          <pre>базовая
+отделка</pre>
+                        </li>
+                        <li class="card__area"><span>66</span>&nbsp;м&#178;<br><span>площадь</span></li>
+                        <li class="card__floor"><span>6/6</span><br><span>этаж</span></li>
+                      </ul><span class="card__price">1 666 666<span>&nbsp;руб.</span></span>
+                      <div class="card__choose">
+                        <input type="checkbox" id="card2">
+                        <label for="card2"></label>
+                      </div><span class="card__footer">Свободно</span>
+                    </div>
+                  </li>
+                  <li class="catalog__item" data-price="5900000" data-amount="14">
+                    <div class="card card--sales">
+                      <div class="card__image"><img src="img/catalog-3.jpg" alt=""></div>
+                      <h3 class="card__title">Двухкомнатная  №567</h3>
+                      <ul>
+                        <li class="card__type"> 
+                          <pre>черновая
+отделка</pre>
+                        </li>
+                        <li class="card__area"><span>65.6</span>&nbsp;м&#178;<br><span>площадь</span></li>
+                        <li class="card__floor"><span>7/14</span><br><span>этаж</span></li>
+                      </ul><span class="card__price">5 900 000<span>&nbsp;руб.</span></span>
+                      <div class="card__choose">
+                        <input type="checkbox" id="card3">
+                        <label for="card3"></label>
+                      </div><span class="card__footer">Продано</span>
+                    </div>
+                  </li>
+                  <li class="catalog__item" data-price="12900000" data-amount="15">
+                    <div class="card card--booked">
+                      <div class="card__image"><img src="img/catalog-4.jpg" alt=""></div>
+                      <h3 class="card__title">Трехкомнатная   №45</h3>
+                      <ul>
+                        <li class="card__type"> 
+                          <pre>без
+отделки</pre>
+                        </li>
+                        <li class="card__area"><span>56</span>&nbsp;м&#178;<br><span>площадь</span></li>
+                        <li class="card__floor"><span>1/14</span><br><span>этаж</span></li>
+                      </ul><span class="card__price">12 900 000<span>&nbsp;руб.</span></span>
+                      <div class="card__choose">
+                        <input type="checkbox" id="card4">
+                        <label for="card4"></label>
+                      </div><span class="card__footer">Забронировано</span>
+                    </div>
+                  </li>
+                  <li class="catalog__item" data-price="1900000" data-amount="6">
+                    <div class="card card--booked">
+                      <div class="card__image"><img src="img/catalog-5.jpg" alt=""></div>
+                      <h3 class="card__title">Студия №25</h3>
+                      <ul>
+                        <li class="card__type"> 
+                          <pre>черновая
+отделка</pre>
+                        </li>
+                        <li class="card__area"><span>18</span>&nbsp;м&#178;<br><span>площадь</span></li>
+                        <li class="card__floor"><span>12/14</span><br><span>этаж</span></li>
+                      </ul><span class="card__price">1 900 000<span>&nbsp;руб.</span></span>
+                      <div class="card__choose">
+                        <input type="checkbox" id="card5">
+                        <label for="card5"></label>
+                      </div><span class="card__footer">Забронировано</span>
+                      <div class="card__sale"><span>17%</span><span>шок цена!</span></div>
+                    </div>
+                  </li>
+                  <li class="catalog__item" data-price="23900000" data-amount="16">
+                    <div class="card card--booked">
+                      <div class="card__image"><img src="img/catalog-6.jpg" alt=""></div>
+                      <h3 class="card__title">Четырехкомнатная №259</h3>
+                      <ul>
+                        <li class="card__type"> 
+                          <pre>черновая
+отделка</pre>
+                        </li>
+                        <li class="card__area"><span>98</span>&nbsp;м&#178;<br><span>площадь</span></li>
+                        <li class="card__floor"><span>14/14</span><br><span>этаж</span></li>
+                      </ul><span class="card__price">23 900 000<span>&nbsp;руб.</span></span>
+                      <div class="card__choose">
+                        <input type="checkbox" id="card6">
+                        <label for="card6"></label>
+                      </div><span class="card__footer">Забронировано</span>
+                      <div class="card__sale"><span>-6%</span></div>
+                    </div>
+                  </li>
+                  <li class="catalog__item" data-price="5666666" data-amount="13">
+                    <div class="card card--free">
+                      <div class="card__image"><img src="img/catalog-7.jpg" alt=""></div>
+                      <h3 class="card__title">Однокомнатная №56</h3>
+                      <ul>
+                        <li class="card__type"> 
+                          <pre>без
+отделки</pre>
+                        </li>
+                        <li class="card__area"><span>36</span>&nbsp;м&#178;<br><span>площадь</span></li>
+                        <li class="card__floor"><span>3/6</span><br><span>этаж</span></li>
+                      </ul><span class="card__price">5 666 666<span>&nbsp;руб.</span></span>
+                      <div class="card__choose">
+                        <input type="checkbox" id="card7">
+                        <label for="card7"></label>
+                      </div><span class="card__footer">Свободно</span>
+                    </div>
+                  </li>
+                  <li class="catalog__item" data-price="5696664" data-amount="15">
+                    <div class="card card--free">
+                      <div class="card__image"><img src="img/catalog-8.jpg" alt=""></div>
+                      <h3 class="card__title">Трехкомнатная   №46</h3>
+                      <ul>
+                        <li class="card__type"> 
+                          <pre>черновая
+отделка</pre>
+                        </li>
+                        <li class="card__area"><span>86</span>&nbsp;м&#178;<br><span>площадь</span></li>
+                        <li class="card__floor"><span>1/6</span><br><span>этаж</span></li>
+                      </ul><span class="card__price">5 696 664<span>&nbsp;руб.</span></span>
+                      <div class="card__choose">
+                        <input type="checkbox" id="card8">
+                        <label for="card8"></label>
+                      </div><span class="card__footer">Свободно</span>
+                    </div>
+                  </li>
+                  <li class="catalog__item" data-price="1200000" data-amount="13">
+                    <div class="card card--booked">
+                      <div class="card__image"><img src="img/catalog-9.jpg" alt=""></div>
+                      <h3 class="card__title">Однокомнатная №2</h3>
+                      <ul>
+                        <li class="card__type"> 
+                          <pre>черновая
+отделка</pre>
+                        </li>
+                        <li class="card__area"><span>18</span>&nbsp;м&#178;<br><span>площадь</span></li>
+                        <li class="card__floor"><span>3/14</span><br><span>этаж</span></li>
+                      </ul><span class="card__price">1 200 000<span>&nbsp;руб.</span></span>
+                      <div class="card__choose">
+                        <input type="checkbox" id="card9">
+                        <label for="card9"></label>
+                      </div><span class="card__footer">Забронировано</span>
+                      <div class="card__sale"><span>-9%</span><span>шок цена!</span></div>
+                    </div>
+                  </li>
+                  <li class="catalog__item" data-price="1500500" data-amount="6">
+                    <div class="card card--booked">
+                      <div class="card__image"><img src="img/catalog-10.jpg" alt=""></div>
+                      <h3 class="card__title">Студия №12</h3>
+                      <ul>
+                        <li class="card__type"> 
+                          <pre>черновая
+отделка</pre>
+                        </li>
+                        <li class="card__area"><span>38</span>&nbsp;м&#178;<br><span>площадь</span></li>
+                        <li class="card__floor"><span>6/14</span><br><span>этаж</span></li>
+                      </ul><span class="card__price">1 500 500<span>&nbsp;руб.</span></span>
+                      <div class="card__choose">
+                        <input type="checkbox" id="card10">
+                        <label for="card10"></label>
+                      </div><span class="card__footer">Забронировано</span>
+                      <div class="card__sale"><span>-6%</span></div>
+                    </div>
+                  </li>
+                  <li class="catalog__item" data-price="6200000" data-amount="13">
+                    <div class="card card--booked">
+                      <div class="card__image"><img src="img/catalog-11.jpg" alt=""></div>
+                      <h3 class="card__title">Однокомнатная №8</h3>
+                      <ul>
+                        <li class="card__type"> 
+                          <pre>черновая
+отделка</pre>
+                        </li>
+                        <li class="card__area"><span>48</span>&nbsp;м&#178;<br><span>площадь</span></li>
+                        <li class="card__floor"><span>3/14</span><br><span>этаж</span></li>
+                      </ul><span class="card__price">6 200 000<span>&nbsp;руб.</span></span>
+                      <div class="card__choose">
+                        <input type="checkbox" id="card11">
+                        <label for="card11"></label>
+                      </div><span class="card__footer">Забронировано</span>
+                    </div>
+                  </li>
+                  <li class="catalog__item" data-price="5255006" data-amount="14">
+                    <div class="card card--booked">
+                      <div class="card__image"><img src="img/catalog-12.jpg" alt=""></div>
+                      <h3 class="card__title">Двухкомнатная  №23</h3>
+                      <ul>
+                        <li class="card__type"> 
+                          <pre>базовая
+отделка</pre>
+                        </li>
+                        <li class="card__area"><span>48</span>&nbsp;м&#178;<br><span>площадь</span></li>
+                        <li class="card__floor"><span>3/14</span><br><span>этаж</span></li>
+                      </ul><span class="card__price">5 255 006<span>&nbsp;руб.</span></span>
+                      <div class="card__choose">
+                        <input type="checkbox" id="card12">
+                        <label for="card12"></label>
+                      </div><span class="card__footer">Забронировано</span>
+                      <div class="card__sale"><span>-6%</span></div>
+                    </div>
+                  </li>
+            </ul>
+            <button class="btn btn--blue" id="showMore">Показать еще 20</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="container">
+      <form class="subscribe" id="subscribe" method="post" onsubmit="javascript:return validate('subscribe','email')">
+        <div class="subscribe__left">
+          <h2>Успей купить!</h2><span>Подпишись и успей словить все акции</span>
+        </div>
+        <div class="subscribe__right">
+          <div class="subscribe__wrap"><span>Введите корректный e-mail</span>
+            <input class="subscribe__input" id="email" type="text" placeholder="E-mail">
+            <div class="subscribe__checkbox-wrap">
+              <input type="checkbox" id="subs" checked>
+              <label for="subs">подписаться на новости</label>
+            </div>
+          </div>
+          <button class="btn btn--brown">Подписаться</button>
+        </div>
+      </form>
+    </div><a class="to-top" title="Наверх"></a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.8.3/polyfill.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+  </body>
+</html>
